@@ -72,13 +72,14 @@
 					document.getElementById('oeil-col-ouvert').id='oeil-col-ferme'"
 			onmouseover="document.getElementById('oeil-col-ouvert').style='background-color: lime'",
 			onmouseleave="document.getElementById('oeil-col-ouvert').style='background-color: none'">
-				<h1>#</h1>
+				<h1>+</h1>
 		</div>
 
 		<div id="divimage-off" class="t-1s">
 
 			<iframe id="frame" src="" title="iframe example 1" >
-  				<p>Your browser does not support iframes.</p>
+  				<p>Your browser does not support iframes.
+  				Better find another computer, sorry.</p>
 			</iframe>
 
 			<!-- <div id="description">
@@ -106,11 +107,14 @@
 									document.getElementById('oeil-mail-ouvert').style='background-color: none'">
 				<h1>@</h1>
 			</div>
+
 			<div id="divliste-off" class="t-1s">
 				<div>
 							<p id="intro">
-								Bienvenue dans la collection de mes idées.
-								Elles sont rangées non hiérarchiquement selon un ordre approximativement chronologique et décroissant.
+								Bonjour et bienvenue sur le site de Jo Balcony
+								<span id="apropos" onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='a_propos.html'">
+								(qui ça ?)</span>, vous trouverez ici une collection d'idées ou de réalisations plus ou moins abouties mais présentées sans hiérarchie sinon chronologique.
 								Pour les découvrir vous pouvez cliquer sur les titres ci-dessous.
 							</p>
 
