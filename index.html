@@ -1,0 +1,403 @@
+<!doctype html>
+
+<html lang:"fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>JO BALCONY</title>
+	<meta name="description" content="Jo Balcony">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<link rel="stylesheet" href="style.css">
+<!--<script src="script.js"></script> -->
+</head>
+
+<body>
+<!-----------------------------------------------------------------------------------
+		 			PREMIÈRE DIV FORMANT FOND
+> #tete
+> #fond
+------------------------------------------------------------------------------------>
+	<div id="contetener"
+		class="t-1s">
+
+<!-----------------------------------------------------------------------------------
+		 			BANDEAU TITRE DÉFILANT :
+> #bouche
+> #courtitre
+------------------------------------------------------------------------------------>		
+	<div id="bouche-titre" class="t-1s">
+		<!-- exemple codepen 1 -->
+		<a onclick="document.getElementById('courtitre').id='bouche-titre',
+					document.getElementById('cadre-liste').id='oeil-mail',
+					document.getElementById('cadre-visu').id='oeil-col',
+					document.getElementById('fondtainer').id='contetener',
+					document.getElementById('divimage-on').id='divimage-off',
+					document.getElementById('divliste-on').id='divliste-off',
+					document.getElementById('oeil-mail-ferme').id='oeil-mail-ouvert',
+					document.getElementById('oeil-col-ferme').id='oeil-col-ouvert',
+					document.getElementById('oeil-col-ouvert').style='background-color: none',
+					document.getElementById('frame').src=''">
+			<div class="messagedefilant">
+				
+				<div data-text="BALCONY">
+					<span>BALCONY</span>
+				</div>
+
+				<div id="vertical-jo">
+				<p id="horizontal-jo">JO</p>
+				</div>			
+			</div>
+
+			<div id="horizontal-balcony">
+				<p>BALCONY</p>
+			</div>
+	
+		</a>
+
+	</div>
+	
+<!-----------------------------------------------------------------------------------
+		 			CADRE A
+> #oeil-gauche
+> #cadre-visuels
+------------------------------------------------------------------------------------>		
+	<div id="oeil-col" class="t-1s">
+		<div id="oeil-col-ouvert" 
+			onclick="document.getElementById('bouche-titre').id='courtitre',
+					document.getElementById('oeil-col').id='cadre-visu',
+					document.getElementById('oeil-mail').id='cadre-liste',
+					document.getElementById('contetener').id='fondtainer',
+					document.getElementById('divimage-off').id='divimage-on',
+					document.getElementById('divliste-off').id='divliste-on',
+					document.getElementById('oeil-mail-ouvert').id='oeil-mail-ferme',
+					document.getElementById('oeil-col-ouvert').id='oeil-col-ferme'"
+			onmouseover="document.getElementById('oeil-col-ouvert').style='background-color: lime'",
+			onmouseleave="document.getElementById('oeil-col-ouvert').style='background-color: none'">
+				<h1>+</h1>
+		</div>
+
+		<div id="divimage-off" class="t-1s">
+
+			<iframe id="frame" src="" title="iframe example 1" >
+  				<p>Your browser does not support iframes.
+  				Better find another computer, sorry.</p>
+			</iframe>
+
+			<!-- <div id="description">
+				<p>azoeifnmaorinv</p>
+			</div>
+	 		<img id="image1" data-src="">
+	 		<img id="image2" data-src="">
+	 		<img id="image3" data-src="">
+	 		<img id="image4" data-src="">
+	 		<img id="image5" data-src=""> -->
+		</div>
+
+	</div>
+
+<!-----------------------------------------------------------------------------------
+		 			CADRE B
+> #oeil-droite
+> #liste-collection
+------------------------------------------------------------------------------------>
+		<div id="oeil-mail" class="t-1s">
+			<div id="oeil-mail-ouvert" class="t-05s" 
+					onmouseover="document.getElementById('mail').id='tirlalangue',
+									document.getElementById('oeil-mail-ouvert').style='background-color: lime'",
+					onmouseleave="document.getElementById('tirlalangue').id='mail'
+									document.getElementById('oeil-mail-ouvert').style='background-color: none'">
+				<h1>@</h1>
+			</div>
+
+			<div id="divliste-off" class="t-1s">
+				<div>
+							<p id="intro">
+								Bonjour et bienvenue sur le site de Jo Balcony
+								<span id="apropos" onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='txt_propos.html'">
+								(qui ça ?)</span>, vous trouverez ici une collection d'idées ou de réalisations plus ou moins abouties mais présentées sans hiérarchie sinon chronologique.
+								Pour les découvrir vous pouvez cliquer sur les titres ci-dessous.
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='20-01_BON2020.html'">
+								BON 2020
+							</p>
+
+							<p class="lien"
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-10_poignee_pain_sec.html'">
+								Poignée pain sec
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-09_store_en_brindille.html'">
+								Store en brindille
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-09_chausson_carton.html'">
+								Chaussons en carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-08_peigne_en_bois.html'">
+								Peigne en bois
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-08_attelle_pour_semelle.html'">
+								Attelle pour semelle
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-07_chalons_sous_eclairs.html'">
+								Châlons-sur-Saône-sous-éclairs
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-05_systeme_affichage_mural_scotch_pince_a_linge.html'">
+								Système d'affichage mural scotch-pince-à-linge
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-05_deux_longues_cuilleres.html'">
+								Deux longues cuillères
+							</p>
+							
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-05_jobalconytop.html'">
+								Site internet jobalcony.top
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-04_abat_jour_solitaire.html'">
+								Abat-jour solitaire
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-04_deux_petites_cuilleres_en_bois.html'">
+								Deux petites cuillères en bois
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-04_abat_jour_prise_terre.html'">
+								Abat-jour prise terre
+							</p>
+					
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-03_porte_plume_de_becasse.html'">
+								Porte-plume de bécasse
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-03_couteau_en_bois.html'">
+								Couteau en bois
+							</p>
+
+							<p class="lien"
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-03_couteau_a_beurre.html'">
+								Couteau à beurre en bois
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-03_carnet-temps_A5-v2-17semaines.html'">
+								Carnet-Temps A5-v2-17semaines
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-02_tretaux_pour_becherel.html'">
+								Trétaux pour Bécherel
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-01_BON2019.html'">
+								Bon 2019
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-08_porte_bagages_velo_bois_ficelle.html'">
+								Porte-bagages bois-ficelle
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_lampe_pixar_murale.html'">
+								Lampe Pixar murale
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_table_basse_carree_en_carton.html'">
+								Table basse carrée en carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_etagere_haute_en_carton.html'">
+								Étagère haute en carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_desserte_a_chaussures_en_carton.html'">
+								Desserte à chaussures
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_meuble_miroir_tiroir.html'">
+								Meuble miroir-tiroir
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_bureau_petit_en_carton.html'">
+								Petit bureau en carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_bureau_en_carton.html'">
+								Bureau en carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-04_banquette_tiroir_en_carton.html'">
+								Banquette en cagettes
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-02_cuillere_infinie.html'">
+								Cuillère infinie
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='18-01_BON2018.html'">
+								Bon 2018
+							</p>
+							
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-10_lot_de_cuilleres_en_bois.html'">
+								Lot de cuillères en bois
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-09_systeme_affichage_mural_scotch_trombonne.html'">
+								Système d'affichage mural scotch-trombonne
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-09_systeme_affichage_mural_scotch_aimant.html'">
+								Système d'affichage mural scotch-aimant
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-06_gif_tournicube.html'">
+								Gif TourniCube
+							</p>
+							
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-05_cocon_de_survie.html'">
+								Cocon de survie
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-03_gif_tarte_aux_pommes.html'">
+								Gif tarte aux pommes
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-02_porte_clefs_mural_en_carton.html'">
+								Porte-clefs mural en carton
+							</p>
+							
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='17-02_poubelle_pied.html'">
+								Poubelle pied
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='15_le_son_produit_par_la_machine_qui_produit_du_son.html'">
+								Le son produit par la machine qui produit du son
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='15_etagere_suspendue.html'">
+								Double étagère suspendue
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='12_porte_brosse_a_dent_entaille.html'">
+								Porte brosse-à-dent-à-entaille
+							</p>
+						
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='12_table_basse_deux_pots.html'">
+								Table basse à deux-pots
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='08_chaise_faisant_de_la_ville_son_pied.html'">
+								Chaise faisant de la ville son pied
+							</p>
+
+							
+							<p id="merci">
+								MERCI !
+							</p>
+
+				</div>
+			</div>
+		</div>
+
+<!-----------------------------------------------------------------------------------
+		 			LANGUE MAIL
+> s'ettire et affiche @mail onhoover sur "oeil-mail"
+------------------------------------------------------------------------------------>
+	<div id="mail" class="t-05s">
+		<h2>
+			INFO@JOBALCONY.TOP
+		</h2>
+	</div>
+
+
+	</div>
+</body>
+
+</html>
