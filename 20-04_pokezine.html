@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang:"fr">
+	<head>
+		<meta charset="utf-8">
+		<title>J O B A L C O N Y</title>
+		<meta name="description" content="Jo Balcony">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div>
+			<p class="texte">
+				2020 - le pokézine (feuilletable en cliquant sur l'image)
+				<p class="texte-sml">
+				Mini édition à exemplaire unique réalisée à partir de pages d'un magazine jeune public datant de la sortie des premiers jeux pokémons sur game boy.</br>
+				Le feuilletage est rendu possible par un bricolage combinant fonction javascript et gif animés. Chaque clic sur l'image indique au navigateur de charger l'image suivante dans une liste donnée.
+				</p>
+			</p>
+		</div>
+		<div class="image">
+			<img id="page" style="cursor: pointer" src="img/pokezine_0.gif">
+		</div>
+
+		<div id="signature">
+			<a href="index.html">JO BALCONY</a>
+		</div>
+
+		<script>
+			var pokezine = [
+				'img/pokezine_1.gif',
+				'img/pokezine_2.gif',
+				'img/pokezine_3.gif',
+				'img/pokezine_4.gif',
+				'img/pokezine_5.gif',
+				'img/pokezine_6.gif',
+				'img/pokezine_7.gif',
+				'img/pokezine_8.gif',
+				'img/pokezine_9.gif',
+				'img/pokezine_10.gif',
+				'img/pokezine_11.gif',
+				'img/pokezine_12.gif',
+				'img/pokezine_13.gif',
+				'img/pokezine_14.gif',
+				'img/pokezine_15.gif',
+				'img/pokezine_16.gif',
+				'img/pokezine_17.gif',
+				];
+			
+			var image = document.getElementById('page');
+			
+			image.onclick = function () {
+    			feuilletage();
+			}
+			
+			var cmptr=0;
+			
+			function feuilletage() {
+				image.src = pokezine[cmptr];
+				cmptr++;
+				if (cmptr == pokezine.length){
+					cmptr=0;
+				}
+			}
+		</script>  		
+
+	</body>
+</html>
