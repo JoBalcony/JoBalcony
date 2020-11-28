@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang:"fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>~ T ~ J ~ Y ~ Z ~</title>
+	<meta name="description" content="tjyz">
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////
+		 			PREMIÈRE DIV FORMANT FOND
+ #tete
+//////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="contetener" class="t-1s">
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////
+		 			BANDEAU TITRE DÉFILANT :
+ #bouche
+//////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="bouche-titre" class="t-1s">
+		<!-- exemple codepen 1 -->
+		<div class="messagedefilant">
+			<div data-text="TH'O">
+				<span>Oh T'ho! Cél'joud'ta néssans là ! </span>
+			</div>
+			<div id="vertical-jo">
+			<p id="horizontal-jo">TH'O</p>
+			</div>			
+		</div>
+		<div id="horizontal-balcony">
+			<p>T.NéLà</p>
+		</div>
+	</div>
+	
+
+<!-- //////////////////////////////////////////////////////////////////////////////////
+		 			CADRE A
+ #oeil-gauche
+/////////////////////////////////////////////////////////////////////////////////// -->		
+
+	<div id="oeil-col" class="t-1s">
+		<div id="oeil-col-ouvert"	
+		onmouseover="document.getElementById('joyeux').id='tirlalangue',
+				document.getElementById('oeil-col-ouvert').style='background-color: lime',
+				document.getElementById('lol1').src='dessin_tho-1.jpg'",
+		onmouseleave="document.getElementById('tirlalangue').id='joyeux'
+				document.getElementById('oeil-col-ouvert').style='background-color: none'
+				document.getElementById('lol1').src=''">
+			<h1>*</h1>
+			<img id="lol1" src="" style="padding:0%; top:0% margin:auto">
+		</div>
+	</div>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////
+		 			CADRE B
+ #oeil-droite
+/////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="oeil-mail" class="t-1s">
+		<div id="oeil-mail-ouvert" class="t-05s" 
+		onmouseover="document.getElementById('anniversaire').id='tirlalangue',
+				document.getElementById('oeil-mail-ouvert').style='background-color: lime'
+				document.getElementById('lol2').src='dessin_tho-2.jpg'",
+		onmouseleave="document.getElementById('tirlalangue').id='anniversaire'
+				document.getElementById('oeil-mail-ouvert').style='background-color: none'
+				document.getElementById('lol2').src=''">
+		<img id="lol2" src="" style="padding:0%; top:0% margin:auto">
+		<h1>*</h1>
+		</div>
+	</div>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////
+		 			LANGUE MAIL
+ s'ettire et affiche @mail onhoover sur "oeil-mail"
+//////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div id="joyeux" class="t-05s" 
+	style="overflow:hidden; height:0%; width:40%; top:57%; left:30%; border-radius:5% 5% 50% 50%; position:absolute; text-align:center">
+		<!--<img src="img/chaise_faisant_de_la_ville_son_pied-1.jpg">-->
+		<h2>
+			JOYEUX
+		</h2>
+	</div>
+	<div id="anniversaire" class="t-05s" 
+	style="overflow:hidden; height:0%; width:40%; top:57%; left:30%; border-radius:5% 5% 50% 50%; position:absolute; text-align:center">
+		<h2>
+			ANNIVERSAIRE
+		</h2>
+	</div>
+
+	</div>
+</body>
+
+</html>

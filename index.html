@@ -5,26 +5,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>JO BALCONY</title>
-	<meta name="description" content="Jo Balcony">
+	<meta name="description" content="Bonjour et bienvenue sur le site de Jo Balcony. Clickez sur lœil droit du smiley pour accéder aux archives. Clickez sur le gauche pour lui faire tirer la langue." />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 	<link rel="stylesheet" href="style.css">
 <!--<script src="script.js"></script> -->
 </head>
 
 <body>
-<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+<!-----------------------------------------------------------------------------------
 		 			PREMIÈRE DIV FORMANT FOND
 > #tete
 > #fond
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+------------------------------------------------------------------------------------>
 	<div id="contetener"
 		class="t-1s">
 
-<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+<!-----------------------------------------------------------------------------------
 		 			BANDEAU TITRE DÉFILANT :
 > #bouche
 > #courtitre
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+------------------------------------------------------------------------------------>		
 	<div id="bouche-titre" class="t-1s">
 		<!-- exemple codepen 1 -->
 		<a onclick="document.getElementById('courtitre').id='bouche-titre',
@@ -56,11 +56,11 @@
 
 	</div>
 	
-<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+<!-----------------------------------------------------------------------------------
 		 			CADRE A
 > #oeil-gauche
 > #cadre-visuels
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+------------------------------------------------------------------------------------>		
 	<div id="oeil-col" class="t-1s">
 		<div id="oeil-col-ouvert" 
 			onclick="document.getElementById('bouche-titre').id='courtitre',
@@ -95,11 +95,11 @@
 
 	</div>
 
-<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+<!-----------------------------------------------------------------------------------
 		 			CADRE B
-#oeil-droite
-#liste-collection
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+> #oeil-droite
+> #liste-collection
+------------------------------------------------------------------------------------>
 		<div id="oeil-mail" class="t-1s">
 			<div id="oeil-mail-ouvert" class="t-05s" 
 					onmouseover="document.getElementById('mail').id='tirlalangue',
@@ -119,11 +119,35 @@
 								Pour les découvrir vous pouvez cliquer sur les titres ci-dessous.
 							</p>
 
-							<!-- <p class="lien" 
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='20-10_open_space_carton.html'">
+								Open Space Carton
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='20-09_tabouret_monoxyle.html'">
+								Tabouret monoxyle
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='20-08_abat_jour_de_survie.html'">
+								Abat-jour de survie
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='20-04_fagotou.html'">
+								Fagotou - Édition numérique
+							</p>
+
+							<p class="lien" 
 									onclick="this.style='text-decoration:line-through',
 									document.getElementById('frame').src='20-04_pokezine.html'">
-								Pokézine
-							</p> -->
+								Pokézine / système de feuilletage en gif animé
+							</p>
 
 							<p class="lien" 
 									onclick="this.style='text-decoration:line-through',
@@ -135,6 +159,12 @@
 									onclick="this.style='text-decoration:line-through',
 									document.getElementById('frame').src='19-10_poignee_pain_sec.html'">
 								Poignée pain sec
+							</p>
+
+							<p class="lien" 
+									onclick="this.style='text-decoration:line-through',
+									document.getElementById('frame').src='19-09_protege_livre_boite_cereales.html'">
+								Protège livre en boîte de céréales
 							</p>
 
 							<p class="lien" 
@@ -392,10 +422,10 @@
 			</div>
 		</div>
 
-<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+<!-----------------------------------------------------------------------------------
 		 			LANGUE MAIL
 > s'ettire et affiche @mail onhoover sur "oeil-mail"
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+------------------------------------------------------------------------------------>
 	<div id="mail" class="t-05s">
 		<h2>
 			INFO@JOBALCONY.TOP

@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang:"fr">
+	<head>
+		<meta charset="utf-8">
+		<title>T H ' O ~ Z E R B I B</title>
+		<meta name="description" content="th'o zerbib">
+		<link rel="stylesheet" href="style.css">
+<!--		<script src="script.js"></script> -->
+	</head>
+
+	<body>
+		<div>
+			<p class="bouche-titre">
+				Oh Th'o ! c'est le jour de ta naissance ! t'es né là !!</br>
+				O T Né Là !!
+			</p>
+			<p class="texte-sml">
+				c'est ici je vais écrire d'autres trucs peut être
+			</p>
+		</div>
+		<div class="image">
+			<img src="img/chaise_faisant_de_la_ville_son_pied-1.jpg">
+		</div>
+		<div class="image">
+			<img src="img/chaise_faisant_de_la_ville_son_pied-2.jpg">
+		</div>
+		<div id="signature">
+			<a href="index.html">JO BALCONY</a>
+		</div>
+	</body>
+</html>
